@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISKCON Donor Form</title>
+  <style>
+    body { font-family: Arial; background: #f8f9fa; padding: 40px; }
+    .form-container { background: white; max-width: 600px; margin: auto; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
+    button { margin-top: 20px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>ISKCON Donor Intake Form</h2>
+    <form>
+      <label>Is this a New or Existing Donor?</label>
+      <select required>
+        <option value="">Select...</option>
+        <option>New Donor</option>
+        <option>Existing Donor</option>
+      </select>
+
+      <label>Donor Name</label>
+      <input type="text" required>
+
+      <label>Contact Category</label>
+      <select>
+        <option>Life Member</option>
+        <option>Bhudana/Daanveer</option>
+        <option>Nitya Seva</option>
+        <option>General contact</option>
+      </select>
+
+      <label>Phone Number</label>
+      <input type="tel">
+
+      <label>Email</label>
+      <input type="email">
+
+      <label>Address</label>
+      <input type="text">
+
+      <label>Company Name</label>
+      <input type="text">
+
+      <label>PAN Number</label>
+      <input type="text">
+
+      <label>Donation Date</label>
+      <input type="date">
+
+      <label>Amount</label>
+      <input type="number">
+
+      <label>Donation Type</label>
+      <select>
+        <option>One Time</option>
+        <option>Construction Purpose</option>
+        <option>Monthly</option>
+        <option>Yearly</option>
+        <option>Event Based</option>
+        <option>In Kind</option>
+      </select>
+
+      <label>Payment Mode</label>
+      <select>
+        <option>Cash</option>
+        <option>Cheque</option>
+        <option>UPI</option>
+        <option>Net Banking</option>
+        <option>Card (Credit/Debit)</option>
+      </select>
+
+      <label>Notes / Follow-up</label>
+      <textarea rows="3"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
